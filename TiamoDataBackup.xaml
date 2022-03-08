@@ -216,7 +216,7 @@
                 </ui:CursorPosition>
               </ui:Click.CursorPosition>
               <ui:Click.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="cfe213dc-350f-4bab-83e7-46f1200a169f" InformativeScreenshot="c1d0f001ab1ce473f986f2ad6f3da4ce" Selector="&lt;wnd app='tiamo.exe' cls='SunAwtFrame' title='tiamo 2.5 - No database loaded' /&gt;&lt;java name='File' role='menu' /&gt;&lt;java name='Database manager...' role='menu item' /&gt;">
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="cfe213dc-350f-4bab-83e7-46f1200a169f" InformativeScreenshot="c1d0f001ab1ce473f986f2ad6f3da4ce" Selector="&lt;wnd app='tiamo.exe' cls='SunAwtFrame' title='tiamo 2.5 -*' /&gt;&lt;java name='File' role='menu' /&gt;&lt;java name='Database manager...' role='menu item' /&gt;">
                   <ui:Target.TimeoutMS>
                     <InArgument x:TypeArguments="x:Int32" />
                   </ui:Target.TimeoutMS>
