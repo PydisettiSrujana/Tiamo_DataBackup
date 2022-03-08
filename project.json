@@ -45,14 +45,14 @@
   "expressionLanguage": "VisualBasic",
   "entryPoints": [
     {
-      "filePath": "TiamoDataBackup.xaml",
-      "uniqueId": "c97f7b06-3966-4f70-88b5-b254a2f57a55",
+      "filePath": "Main.xaml",
+      "uniqueId": "fed56db6-1acb-4fcf-8d8b-3567494ed676",
       "input": [],
       "output": []
     },
     {
-      "filePath": "Main.xaml",
-      "uniqueId": "fed56db6-1acb-4fcf-8d8b-3567494ed676",
+      "filePath": "TiamoDataBackup.xaml",
+      "uniqueId": "fbc79a75-b09c-436d-96ed-73d240997d60",
       "input": [],
       "output": []
     }
