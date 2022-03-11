@@ -5,7 +5,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1010.66666666667,5628</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1010.66666666667,5598</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="60">
@@ -79,7 +79,7 @@
       <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="In this process taking data backup of tiamo application" DisplayName="Tiamo_Backup" sap:VirtualizedContainerService.HintSize="1020.66666666667,5563.33333333333" sap2010:WorkflowViewState.IdRef="Sequence_2">
+  <Sequence sap2010:Annotation.AnnotationText="In this process taking data backup of tiamo application" DisplayName="Tiamo_Backup" sap:VirtualizedContainerService.HintSize="1020.66666666667,5533.33333333333" sap2010:WorkflowViewState.IdRef="Sequence_2">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="str_BackupName" />
       <Variable x:TypeArguments="x:String" Name="str_BackupSourcePath" />
@@ -109,13 +109,13 @@
         <InArgument x:TypeArguments="x:String">[Now.ToString("dd-MMM-yyyy HH-mm-ss")]</InArgument>
       </Assign.Value>
     </Assign>
-    <ui:OpenApplication ApplicationWindow="{x:Null}" Arguments="{x:Null}" TimeoutMS="{x:Null}" WorkingDirectory="{x:Null}" DisplayName="Open Tiamo Application" FileName="C:\Program Files (x86)\Metrohm\tiamo\bin\tiamo.exe" sap:VirtualizedContainerService.HintSize="978.666666666667,4786" sap2010:WorkflowViewState.IdRef="OpenApplication_1" InformativeScreenshot="5b71edcf04cca68ac8d91579c738f85c" Selector="&lt;wnd app='tiamo.exe' cls='SunAwtFrame' title='tiamo 2.5 - Workplace' /&gt;">
+    <ui:OpenApplication ApplicationWindow="{x:Null}" Arguments="{x:Null}" TimeoutMS="{x:Null}" WorkingDirectory="{x:Null}" DisplayName="Open Tiamo Application" FileName="C:\Program Files (x86)\Metrohm\tiamo\bin\tiamo.exe" sap:VirtualizedContainerService.HintSize="978.666666666667,4756" sap2010:WorkflowViewState.IdRef="OpenApplication_1" InformativeScreenshot="5b71edcf04cca68ac8d91579c738f85c" Selector="&lt;wnd app='tiamo.exe' cls='SunAwtFrame' title='tiamo 2.5 - Workplace' /&gt;">
       <ui:OpenApplication.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="944.666666666667,4640" sap2010:WorkflowViewState.IdRef="Sequence_1">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="944.666666666667,4610" sap2010:WorkflowViewState.IdRef="Sequence_1">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -134,57 +134,35 @@
                 </ui:Target>
               </ui:UiElementExists.Target>
             </ui:UiElementExists>
-            <If Condition="[bool_DemoVersion]" DisplayName="If_CheckingDemoVersionExists" sap:VirtualizedContainerService.HintSize="902.666666666667,616" sap2010:WorkflowViewState.IdRef="If_1">
+            <If Condition="[bool_DemoVersion]" DisplayName="If_CheckingDemoVersionExists" sap:VirtualizedContainerService.HintSize="902.666666666667,586" sap2010:WorkflowViewState.IdRef="If_1">
               <If.Then>
-                <Sequence DisplayName="ExistsClickOk" sap:VirtualizedContainerService.HintSize="768,424.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                <Sequence DisplayName="ExistsClickOk" sap:VirtualizedContainerService.HintSize="376,394.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_3">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="726,94.6666666666667" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="Info" Message="[&quot;Clicking element exists button&quot;]" />
-                  <ui:AnchorBase AnchorPosition="Auto" DisplayName="Anchor Base" sap:VirtualizedContainerService.HintSize="726,198" sap2010:WorkflowViewState.IdRef="AnchorBase_1">
-                    <ui:AnchorBase.Action>
-                      <ActivityAction x:TypeArguments="ui:Anchor">
-                        <ActivityAction.Argument>
-                          <DelegateInArgument x:TypeArguments="ui:Anchor" Name="ContextAnchor" />
-                        </ActivityAction.Argument>
-                        <ui:Click AlterIfDisabled="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DelayBefore="4000" DelayMS="4000" DisplayName="Click_OK" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_5" KeyModifiers="None" MouseButton="BTN_LEFT">
-                          <ui:Click.CursorPosition>
-                            <ui:CursorPosition Position="Center">
-                              <ui:CursorPosition.OffsetX>
-                                <InArgument x:TypeArguments="x:Int32" />
-                              </ui:CursorPosition.OffsetX>
-                              <ui:CursorPosition.OffsetY>
-                                <InArgument x:TypeArguments="x:Int32" />
-                              </ui:CursorPosition.OffsetY>
-                            </ui:CursorPosition>
-                          </ui:Click.CursorPosition>
-                          <ui:Click.Target>
-                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="480ec580-ae61-4e6e-86aa-ddef39bb874d" InformativeScreenshot="b67fdbfbdc56970c147c4aff7a24d209" Selector="&lt;wnd app='tiamo.exe' cls='SunAwtDialog' title='001-104 Demo version' /&gt;&lt;java name='OK' role='push button' cls='MButton' /&gt;" WaitForReady="COMPLETE">
-                              <ui:Target.TimeoutMS>
-                                <InArgument x:TypeArguments="x:Int32" />
-                              </ui:Target.TimeoutMS>
-                            </ui:Target>
-                          </ui:Click.Target>
-                        </ui:Click>
-                      </ActivityAction>
-                    </ui:AnchorBase.Action>
-                    <ui:AnchorBase.AnchorProvider>
-                      <ui:WaitUiElementAppear FoundElement="{x:Null}" WaitActive="{x:Null}" WaitVisible="{x:Null}" DisplayName="Find Element 'tiamo.exe 001-104'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_1">
-                        <ui:WaitUiElementAppear.Target>
-                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="97e6691e-dc8c-4fb8-b783-fca65dd442f5" InformativeScreenshot="360d2b7eee8afb51ce5ff63fd6032e41">
-                            <ui:Target.TimeoutMS>
-                              <InArgument x:TypeArguments="x:Int32" />
-                            </ui:Target.TimeoutMS>
-                            <ui:Target.WaitForReady>
-                              <InArgument x:TypeArguments="ui:WaitForReady" />
-                            </ui:Target.WaitForReady>
-                          </ui:Target>
-                        </ui:WaitUiElementAppear.Target>
-                      </ui:WaitUiElementAppear>
-                    </ui:AnchorBase.AnchorProvider>
-                  </ui:AnchorBase>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,94.6666666666667" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="Info" Message="[&quot;Clicking element exists button&quot;]" />
+                  <Delay Duration="00:00:10" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="Delay_7" />
+                  <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click on Ok" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_7" KeyModifiers="None" MouseButton="BTN_LEFT">
+                    <ui:Click.CursorPosition>
+                      <ui:CursorPosition Position="Center">
+                        <ui:CursorPosition.OffsetX>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:CursorPosition.OffsetX>
+                        <ui:CursorPosition.OffsetY>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:CursorPosition.OffsetY>
+                      </ui:CursorPosition>
+                    </ui:Click.CursorPosition>
+                    <ui:Click.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="abf49a56-5c45-46cb-b216-e38fdae62b4f" InformativeScreenshot="f4a5669acf3495b66372a5ec2d5b623c" Selector="&lt;wnd app='tiamo.exe' cls='SunAwtDialog' title='001-104 Demo version' /&gt;&lt;java cls='MessageDlg' name='001-104 Demo version' role='dialog' /&gt;&lt;java name='OK' role='push button' /&gt;" WaitForReady="NONE">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                      </ui:Target>
+                    </ui:Click.Target>
+                  </ui:Click>
                 </Sequence>
               </If.Then>
               <If.Else>
@@ -199,7 +177,7 @@
             </If>
             <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="902.666666666667,22" sap2010:WorkflowViewState.IdRef="Delay_1" />
             <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="902.666666666667,94.6666666666667" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[&quot;Clicking database icon&quot;]" />
-            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click_DatabaseIcon" sap:VirtualizedContainerService.HintSize="902.666666666667,106" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_RIGHT" SimulateClick="False">
+            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click_DatabaseIcon" sap:VirtualizedContainerService.HintSize="902.666666666667,106" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="False">
               <ui:Click.CursorPosition>
                 <ui:CursorPosition Position="Center">
                   <ui:CursorPosition.OffsetX>
@@ -211,7 +189,7 @@
                 </ui:CursorPosition>
               </ui:Click.CursorPosition>
               <ui:Click.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a52c6bfc-594e-4960-ac82-157d27fc8bab" InformativeScreenshot="5a29bba333fd51c6c9a5564b233713a9" Selector="&lt;java cls='SideBarIcon' role='label' /&gt;">
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a52c6bfc-594e-4960-ac82-157d27fc8bab" InformativeScreenshot="5a29bba333fd51c6c9a5564b233713a9" Selector="&lt;java cls='SideBarIcon' role='label' idx='2' /&gt;">
                   <ui:Target.TimeoutMS>
                     <InArgument x:TypeArguments="x:Int32" />
                   </ui:Target.TimeoutMS>
